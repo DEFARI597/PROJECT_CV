@@ -1,0 +1,184 @@
+/* Reset margin and padding */
+
+body {
+  overflow-y: scroll;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 1s, transform 1s;
+}
+
+nav img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  transform: translateX(250px);
+}
+
+/* Intro Section */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.text p:first-child {
+  font-style: italic;
+  font-size: 20px;
+  color: #555;
+}
+
+.text h1 {
+  font-size: 2em;
+  margin: 10px 0;
+  font-weight: normal;
+}
+
+.text h1 span {
+  font-weight: bold;
+}
+
+.text p:last-child {
+  font-style: italic;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Image Section */
+.image-container {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.end {
+  background-color: #7d8079;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover {
+  color: grey;
+}
+
+.frame1 {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  transform: translateX(-200%) skew(45deg);
+  animation: frame 1s linear;
+  background-color: gray;
+  animation-delay: 0.001s;
+}
+
+@keyframes frame {
+  to {
+    transform: translateX(100%) skew(0deg);
+  }
+}
+
+.services-section {
+  transform: translate(250px);
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+}
+
+.services-section h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.service-banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.services-container {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  text-align: center;
+}
+
+.icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.service-card h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.more-link {
+  font-size: 0.9em;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.more-link:hover {
+  text-decoration: underline;
+}
